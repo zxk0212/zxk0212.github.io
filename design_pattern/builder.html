@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>生成器模式 | ZCY&#39;s BLOG</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Just do it!">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a4db85a.css" as="style"><link rel="preload" href="/assets/js/app.7966699e.js" as="script"><link rel="preload" href="/assets/js/2.a36266ce.js" as="script"><link rel="preload" href="/assets/js/17.98a5474b.js" as="script"><link rel="prefetch" href="/assets/js/10.d7744464.js"><link rel="prefetch" href="/assets/js/11.073d9fb2.js"><link rel="prefetch" href="/assets/js/12.fd3337a1.js"><link rel="prefetch" href="/assets/js/13.f250a71d.js"><link rel="prefetch" href="/assets/js/14.233c4df8.js"><link rel="prefetch" href="/assets/js/15.189ee2c5.js"><link rel="prefetch" href="/assets/js/16.f4b33bcf.js"><link rel="prefetch" href="/assets/js/18.88f98640.js"><link rel="prefetch" href="/assets/js/19.09bc7a58.js"><link rel="prefetch" href="/assets/js/20.5020bc01.js"><link rel="prefetch" href="/assets/js/21.3cf865db.js"><link rel="prefetch" href="/assets/js/22.10e298f8.js"><link rel="prefetch" href="/assets/js/23.4629b927.js"><link rel="prefetch" href="/assets/js/24.0e1d2962.js"><link rel="prefetch" href="/assets/js/25.3a7f5748.js"><link rel="prefetch" href="/assets/js/26.f0f3808f.js"><link rel="prefetch" href="/assets/js/27.efe9003b.js"><link rel="prefetch" href="/assets/js/28.1b54fe71.js"><link rel="prefetch" href="/assets/js/29.102b0e8c.js"><link rel="prefetch" href="/assets/js/3.0ca1a8e6.js"><link rel="prefetch" href="/assets/js/4.fd3ef56b.js"><link rel="prefetch" href="/assets/js/5.e326f80d.js"><link rel="prefetch" href="/assets/js/6.7129a48f.js"><link rel="prefetch" href="/assets/js/7.b03b58ac.js"><link rel="prefetch" href="/assets/js/8.cf5b412a.js"><link rel="prefetch" href="/assets/js/9.8677abc0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a4db85a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ZCY's BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>认识设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式七大原则</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>创建型设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/design_pattern/singleton.html" class="sidebar-link">单例模式</a></li><li><a href="/design_pattern/simple.html" class="sidebar-link">简单工厂模式</a></li><li><a href="/design_pattern/factoryMethod.html" class="sidebar-link">工厂方法模式</a></li><li><a href="/design_pattern/abstractFactory.html" class="sidebar-link">抽象工厂模式</a></li><li><a href="/design_pattern/builder.html" aria-current="page" class="active sidebar-link">生成器模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_pattern/builder.html#生成器模式" class="sidebar-link">生成器模式</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>结构型设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>行为型设计模式</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="生成器模式"><a href="#生成器模式" class="header-anchor">#</a> 生成器模式</h2> <h4 id="生成器模式-又名-建造模式-是一种对象构造模式。它可以将复杂对象的建造过程抽象出来-使这个抽象过程的不同实现方法可以构造出不同的表现的对象。"><a href="#生成器模式-又名-建造模式-是一种对象构造模式。它可以将复杂对象的建造过程抽象出来-使这个抽象过程的不同实现方法可以构造出不同的表现的对象。" class="header-anchor">#</a> 生成器模式，又名：建造模式，是一种对象构造模式。它可以将复杂对象的建造过程抽象出来，使这个抽象过程的不同实现方法可以构造出不同的表现的对象。</h4> <blockquote><ol><li>用户只需要给出指定复杂对象的类型和内容</li> <li>生成器模式只负责按顺序创建复杂对象。</li></ol></blockquote> <h3 id="作用"><a href="#作用" class="header-anchor">#</a> 作用</h3> <ol><li>降低创建复杂对象的复杂度</li> <li>隔离了创建对象的构建过程和表现</li></ol> <h3 id="简单例子"><a href="#简单例子" class="header-anchor">#</a> 简单例子</h3> <blockquote><p>​	生产汽车和买汽车</p> <ol><li><p>工厂（生成器）：仅负责制造汽车（组装过程和细节在工厂内部）</p></li> <li><p>客户： 你只需要说出想要的汽车</p> <p>客户不需要知道汽车是怎么组装的</p></li></ol></blockquote> <h3 id="应用场景"><a href="#应用场景" class="header-anchor">#</a> 应用场景</h3> <ul><li>当创建复杂对象的算法应该独立于该对象的组成部分以及他们的装配方法时使用</li> <li>当构造过程必须允许被构造的对象有不同的表示时</li></ul> <h3 id="模式组成"><a href="#模式组成" class="header-anchor">#</a> 模式组成</h3> <table><thead><tr><th style="text-align:center;">角色</th> <th style="text-align:center;">作用</th></tr></thead> <tbody><tr><td style="text-align:center;">Builder</td> <td style="text-align:center;">它为创建一个产品Product对象的各个部件指定抽象接口，在该接口中一般声明两类方法，一类方法是buildPartX()，它们用于创建复杂对象的各个部件；另一类方法是getResult()，它们用于返回复杂对象。Builder既可以是抽象类，也可以是接口。</td></tr> <tr><td style="text-align:center;">ConcreteBuilder</td> <td style="text-align:center;">它实现了Builder接口，实现各个部件的具体构造和装配方法，定义并明确它所创建的复杂对象，也可以提供一个方法返回创建好的复杂产品对象。</td></tr> <tr><td style="text-align:center;">Director</td> <td style="text-align:center;">指挥者又称为导演类，它负责安排复杂对象的建造次序，指挥者与抽象建造者之间存在关联关系，可以在其construct()建造方法中调用建造者对象的部件构造与装配方法，完成复杂对象的建造。客户端一般只需要与指挥者进行交互，在客户端确定具体建造者的类型，并实例化具体建造者对象（也可以通过配置文件和反射机制），然后通过指挥者类的构造函数或者Setter方法将该对象传入指挥者类中。</td></tr> <tr><td style="text-align:center;">Product</td> <td style="text-align:center;">它是被构建的复杂对象，包含多个组成部件，具体建造者创建该产品的内部表示并定义它的装配过程。</td></tr></tbody></table> <h3 id="类图"><a href="#类图" class="header-anchor">#</a> 类图</h3> <p><img src="/assets/img/builder.fb1b7032.gif" alt="builder"></p> <h3 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h3> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">createPattern<span class="token punctuation">.</span></span><span class="token class-name">Builder</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">List</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Client</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Director</span> director <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Director</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Builder</span> builder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ConcreteBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//沟通需求后，老板叫装机人员去装电脑</span>
+        director<span class="token punctuation">.</span><span class="token class-name">Construct</span><span class="token punctuation">(</span>builder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//装完后，组装人员搬来组装好的电脑</span>
+        <span class="token class-name">Computer</span> computer <span class="token operator">=</span> builder<span class="token punctuation">.</span><span class="token class-name">GetComputer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//组装人员展示电脑给小成看</span>
+        computer<span class="token punctuation">.</span><span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Builder</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">//第一步：装CPU</span>
+    <span class="token comment">//声明为抽象方法，具体由子类实现</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span>  <span class="token class-name">BuildCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//第二步：装主板</span>
+    <span class="token comment">//声明为抽象方法，具体由子类实现</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token class-name">BuildMainboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//第三步：装硬盘</span>
+    <span class="token comment">//声明为抽象方法，具体由子类实现</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token class-name">BuildHD</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//返回产品的方法：获得组装好的电脑</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">Computer</span> <span class="token class-name">GetComputer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Director</span><span class="token punctuation">{</span>
+    <span class="token comment">//指挥装机人员组装电脑</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Construct</span><span class="token punctuation">(</span><span class="token class-name">Builder</span> builder<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        builder<span class="token punctuation">.</span> <span class="token class-name">BuildCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        builder<span class="token punctuation">.</span><span class="token class-name">BuildMainboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        builder<span class="token punctuation">.</span> <span class="token class-name">BuildHD</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//装机人员1</span>
+<span class="token keyword">class</span> <span class="token class-name">ConcreteBuilder</span> <span class="token keyword">extends</span> <span class="token class-name">Builder</span><span class="token punctuation">{</span>
+    <span class="token comment">//创建产品实例</span>
+    <span class="token class-name">Computer</span> computer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//组装产品</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span>  <span class="token class-name">BuildCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        computer<span class="token punctuation">.</span><span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token string">&quot;组装CPU&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span>  <span class="token class-name">BuildMainboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        computer<span class="token punctuation">.</span><span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token string">&quot;组装主板&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span>  <span class="token class-name">BuildHD</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        computer<span class="token punctuation">.</span><span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token string">&quot;组装主板&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">//返回组装成功的电脑</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span>  <span class="token class-name">Computer</span> <span class="token class-name">GetComputer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> computer<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Computer</span><span class="token punctuation">{</span>
+
+    <span class="token comment">//电脑组件的集合</span>
+    <span class="token keyword">private</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> parts <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//用于将组件组装到电脑里</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Add</span><span class="token punctuation">(</span><span class="token class-name">String</span> part<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        parts<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>part<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>parts<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;组件&quot;</span><span class="token operator">+</span>parts<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;装好了&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;电脑组装完成，请验收&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/design_pattern/abstractFactory.html" class="prev">
+        抽象工厂模式
+      </a></span> <span class="next"><a href="/design_pattern/Structural_Pattern.html">
+        结构型模式简介
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7966699e.js" defer></script><script src="/assets/js/2.a36266ce.js" defer></script><script src="/assets/js/17.98a5474b.js" defer></script>
+  </body>
+</html>

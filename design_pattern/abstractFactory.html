@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>抽象工厂模式 | ZCY&#39;s BLOG</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Just do it!">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a4db85a.css" as="style"><link rel="preload" href="/assets/js/app.7966699e.js" as="script"><link rel="preload" href="/assets/js/2.a36266ce.js" as="script"><link rel="preload" href="/assets/js/9.8677abc0.js" as="script"><link rel="prefetch" href="/assets/js/10.d7744464.js"><link rel="prefetch" href="/assets/js/11.073d9fb2.js"><link rel="prefetch" href="/assets/js/12.fd3337a1.js"><link rel="prefetch" href="/assets/js/13.f250a71d.js"><link rel="prefetch" href="/assets/js/14.233c4df8.js"><link rel="prefetch" href="/assets/js/15.189ee2c5.js"><link rel="prefetch" href="/assets/js/16.f4b33bcf.js"><link rel="prefetch" href="/assets/js/17.98a5474b.js"><link rel="prefetch" href="/assets/js/18.88f98640.js"><link rel="prefetch" href="/assets/js/19.09bc7a58.js"><link rel="prefetch" href="/assets/js/20.5020bc01.js"><link rel="prefetch" href="/assets/js/21.3cf865db.js"><link rel="prefetch" href="/assets/js/22.10e298f8.js"><link rel="prefetch" href="/assets/js/23.4629b927.js"><link rel="prefetch" href="/assets/js/24.0e1d2962.js"><link rel="prefetch" href="/assets/js/25.3a7f5748.js"><link rel="prefetch" href="/assets/js/26.f0f3808f.js"><link rel="prefetch" href="/assets/js/27.efe9003b.js"><link rel="prefetch" href="/assets/js/28.1b54fe71.js"><link rel="prefetch" href="/assets/js/29.102b0e8c.js"><link rel="prefetch" href="/assets/js/3.0ca1a8e6.js"><link rel="prefetch" href="/assets/js/4.fd3ef56b.js"><link rel="prefetch" href="/assets/js/5.e326f80d.js"><link rel="prefetch" href="/assets/js/6.7129a48f.js"><link rel="prefetch" href="/assets/js/7.b03b58ac.js"><link rel="prefetch" href="/assets/js/8.cf5b412a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a4db85a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ZCY's BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>认识设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式七大原则</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>创建型设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/design_pattern/singleton.html" class="sidebar-link">单例模式</a></li><li><a href="/design_pattern/simple.html" class="sidebar-link">简单工厂模式</a></li><li><a href="/design_pattern/factoryMethod.html" class="sidebar-link">工厂方法模式</a></li><li><a href="/design_pattern/abstractFactory.html" aria-current="page" class="active sidebar-link">抽象工厂模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_pattern/abstractFactory.html#抽象工厂模式" class="sidebar-link">抽象工厂模式</a></li></ul></li><li><a href="/design_pattern/builder.html" class="sidebar-link">生成器模式</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>结构型设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>行为型设计模式</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="抽象工厂模式"><a href="#抽象工厂模式" class="header-anchor">#</a> 抽象工厂模式</h2> <h3 id="定义-抽象工厂模式的实质是-提供接口-创建一系列相关或独立的对象-而不指定这些对象的具体类。"><a href="#定义-抽象工厂模式的实质是-提供接口-创建一系列相关或独立的对象-而不指定这些对象的具体类。" class="header-anchor">#</a> 定义：抽象工厂模式的实质是“提供接口，创建一系列相关或独立的对象，而不指定这些对象的具体类。”</h3> <blockquote><p>​	抽象工厂与工厂方法最大的区别：抽象工厂中每个工厂可以创建一组产品，而工厂方法只能创建一个。这一组产品称为产品族，产品族中的每一个产品部分属于一个产品等级结构。</p></blockquote> <h4 id="产品组与产品等级结构"><a href="#产品组与产品等级结构" class="header-anchor">#</a> 产品组与产品等级结构</h4> <p>​	产品等级结构可以理解为 <strong>产品的继承结构</strong>。 比如说抽象类是鞋子，子类包括Nike的鞋子Adidas的鞋子，Puma鞋子，这时候鞋子与具体的鞋子之间就构成了产品等级结构。</p> <p>​	产品族。在抽象工厂中产品族是指由 <strong>同一工厂生产的产品</strong>，隶属于不同的产品等级结构中。 比如： 苹果公司，有苹果手机，苹果电脑，苹果平板电脑等。这些产品就构成了一个产品族。</p> <p><img src="/assets/img/abfactoryProduct.a25fc305.png" alt="abfactoryProduct"></p> <h3 id="抽象工厂类图"><a href="#抽象工厂类图" class="header-anchor">#</a> 抽象工厂类图</h3> <p><img src="/assets/img/Abstract_factory_UML.88ba69e2.svg" alt="Abstract_factory_UML"></p> <table><thead><tr><th>角色</th> <th>关系</th> <th>作用</th></tr></thead> <tbody><tr><td>AbstractProduct（抽象产品）</td> <td>具体产品的父类</td> <td>抽数具体产品的接口</td></tr> <tr><td>Product（具体产品）</td> <td>工厂类创建的目标类</td> <td>描述生产的具体产品</td></tr> <tr><td>AbstractFactory（抽象工厂）</td> <td>具体工厂的父类</td> <td>描述具体工厂的公共接口</td></tr> <tr><td>ConcreteFactory（具体工厂）</td> <td>被外界调用的类</td> <td>描述具体的工厂，实现创建产品的对象实例</td></tr></tbody></table> <h3 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h3> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token class-name">AbstractFactory</span><span class="token punctuation">;</span>
+
+<span class="token comment">// class CPU</span>
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> CPU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EmberCPU</span>
+<span class="token keyword">class</span> <span class="token class-name">EmberCPU</span> <span class="token keyword">extends</span> CPU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了EmberCPU&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EnginolaCPU</span>
+<span class="token keyword">class</span> <span class="token class-name">EnginolaCPU</span> <span class="token keyword">extends</span> CPU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了EnginolaCPU&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class MMU</span>
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> MMU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EmberMMU</span>
+<span class="token keyword">class</span> <span class="token class-name">EmberMMU</span> <span class="token keyword">extends</span> MMU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了EmberMMU&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EnginolaMMU</span>
+<span class="token keyword">class</span> <span class="token class-name">EnginolaMMU</span> <span class="token keyword">extends</span> MMU <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了EnginolaMMU&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EmberFactory</span>
+<span class="token keyword">class</span> <span class="token class-name">EmberFactory</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractFactory</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">CPU</span> <span class="token function">createCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">EmberCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">MMU</span> <span class="token function">createMMU</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">EmberMMU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// class EnginolaFactory</span>
+<span class="token keyword">class</span> <span class="token class-name">EnginolaFactory</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractFactory</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">CPU</span> <span class="token function">createCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">EnginolaCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">MMU</span> <span class="token function">createMMU</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">EnginolaMMU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">enum</span> <span class="token class-name">Architecture</span> <span class="token punctuation">{</span>
+    ENGINOLA<span class="token punctuation">,</span> EMBER
+<span class="token punctuation">}</span>
+
+<span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">AbstractFactory</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">CPU</span> <span class="token function">createCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">MMU</span> <span class="token function">createMMU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Client</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">EmberFactory</span> emberFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EmberFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">CPU</span> cpu <span class="token operator">=</span> emberFactory<span class="token punctuation">.</span><span class="token function">createCPU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cpu<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br></div></div><h3 id="优点"><a href="#优点" class="header-anchor">#</a> 优点：</h3> <ol><li><p>降低耦合</p> <p>抽象工厂模式将具体的产品创建延迟到具体工厂子类中，这样将对象封装了起来，可以减少客户端和具体产品类之间的依赖。从而使系统耦合度降低，这样更有利于后期的维护和扩展。</p></li> <li><p>更符合开闭原则</p> <p>新增一个产品类时，只需要增加相应地具体产品类和相应地工厂子类</p></li> <li><p>更符合单一职责原则</p> <p>每个具体的工厂类只负责创建对应的产品。</p></li></ol> <h3 id="缺点"><a href="#缺点" class="header-anchor">#</a> 缺点</h3> <p>​	<strong>抽象工厂模式很难支持新种类产品的变化。</strong>
+这是因为抽象工厂接口中已经确定了可以被创建的产品集合，如果需要添加新产品，此时就必须去修改抽象工厂的接口，这样就涉及到抽象工厂类的以及所有子类的改变，这样也就违背了“开发——封闭”原则。</p> <h3 id="应用场景"><a href="#应用场景" class="header-anchor">#</a> 应用场景</h3> <ul><li>这个系统有多个系列产品，而系统中只消费其中某一系列产品</li> <li>系统要求提供一个产品类的库，所有产品以同样的接口出现，客户端不需要依赖具体实现。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/design_pattern/factoryMethod.html" class="prev">
+        工厂方法模式
+      </a></span> <span class="next"><a href="/design_pattern/builder.html">
+        生成器模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7966699e.js" defer></script><script src="/assets/js/2.a36266ce.js" defer></script><script src="/assets/js/9.8677abc0.js" defer></script>
+  </body>
+</html>

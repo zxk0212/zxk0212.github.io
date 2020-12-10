@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>工厂方法模式 | ZCY&#39;s BLOG</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Just do it!">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a4db85a.css" as="style"><link rel="preload" href="/assets/js/app.7966699e.js" as="script"><link rel="preload" href="/assets/js/2.a36266ce.js" as="script"><link rel="preload" href="/assets/js/10.d7744464.js" as="script"><link rel="prefetch" href="/assets/js/11.073d9fb2.js"><link rel="prefetch" href="/assets/js/12.fd3337a1.js"><link rel="prefetch" href="/assets/js/13.f250a71d.js"><link rel="prefetch" href="/assets/js/14.233c4df8.js"><link rel="prefetch" href="/assets/js/15.189ee2c5.js"><link rel="prefetch" href="/assets/js/16.f4b33bcf.js"><link rel="prefetch" href="/assets/js/17.98a5474b.js"><link rel="prefetch" href="/assets/js/18.88f98640.js"><link rel="prefetch" href="/assets/js/19.09bc7a58.js"><link rel="prefetch" href="/assets/js/20.5020bc01.js"><link rel="prefetch" href="/assets/js/21.3cf865db.js"><link rel="prefetch" href="/assets/js/22.10e298f8.js"><link rel="prefetch" href="/assets/js/23.4629b927.js"><link rel="prefetch" href="/assets/js/24.0e1d2962.js"><link rel="prefetch" href="/assets/js/25.3a7f5748.js"><link rel="prefetch" href="/assets/js/26.f0f3808f.js"><link rel="prefetch" href="/assets/js/27.efe9003b.js"><link rel="prefetch" href="/assets/js/28.1b54fe71.js"><link rel="prefetch" href="/assets/js/29.102b0e8c.js"><link rel="prefetch" href="/assets/js/3.0ca1a8e6.js"><link rel="prefetch" href="/assets/js/4.fd3ef56b.js"><link rel="prefetch" href="/assets/js/5.e326f80d.js"><link rel="prefetch" href="/assets/js/6.7129a48f.js"><link rel="prefetch" href="/assets/js/7.b03b58ac.js"><link rel="prefetch" href="/assets/js/8.cf5b412a.js"><link rel="prefetch" href="/assets/js/9.8677abc0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a4db85a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ZCY's BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>认识设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式七大原则</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>创建型设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/design_pattern/singleton.html" class="sidebar-link">单例模式</a></li><li><a href="/design_pattern/simple.html" class="sidebar-link">简单工厂模式</a></li><li><a href="/design_pattern/factoryMethod.html" aria-current="page" class="active sidebar-link">工厂方法模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_pattern/factoryMethod.html#工厂方法模式" class="sidebar-link">工厂方法模式</a></li></ul></li><li><a href="/design_pattern/abstractFactory.html" class="sidebar-link">抽象工厂模式</a></li><li><a href="/design_pattern/builder.html" class="sidebar-link">生成器模式</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>结构型设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>行为型设计模式</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="工厂方法模式"><a href="#工厂方法模式" class="header-anchor">#</a> 工厂方法模式</h2> <p>工厂方法是一种实现了“工厂”概念的面向对象设计模式。</p> <h3 id="定义-定义一个创建对象的接口-但让实现这个接口的类来决定实例化哪个类。工厂方法让类的实例化推迟到子类中进行。"><a href="#定义-定义一个创建对象的接口-但让实现这个接口的类来决定实例化哪个类。工厂方法让类的实例化推迟到子类中进行。" class="header-anchor">#</a> 定义：定义一个创建对象的接口，但让实现这个接口的类来决定实例化哪个类。工厂方法让类的实例化推迟到子类中进行。</h3> <h3 id="工厂方法类图"><a href="#工厂方法类图" class="header-anchor">#</a> 工厂方法类图</h3> <p><img src="/assets/img/factorymethod.614be05c.png" alt="factorymethod"></p> <h3 id="模式组成"><a href="#模式组成" class="header-anchor">#</a> 模式组成</h3> <table><thead><tr><th>角色</th> <th>关系</th> <th>作用</th></tr></thead> <tbody><tr><td>Product(抽象产品)</td> <td>具体产品的父类</td> <td>描述具体产品的公共接口</td></tr> <tr><td>Concrete Product(具体产品)</td> <td>抽象产品的子类，工厂类创建的目标</td> <td>描述生产的具体产品</td></tr> <tr><td>Creator(抽象工厂)</td> <td>具体工厂的父类</td> <td>描述具体工厂的公共接口</td></tr> <tr><td>Concrete Creator(具体工厂)</td> <td>抽象工厂的子类，被外界调用</td> <td>描述具体工厂，实现创建产品实例的方法</td></tr></tbody></table> <h3 id="使用步骤"><a href="#使用步骤" class="header-anchor">#</a> 使用步骤</h3> <p><strong>步骤1：</strong> 创建<strong>抽象工厂类</strong>，定义具体工厂的公共接口；
+<strong>步骤2：</strong> 创建<strong>抽象产品类</strong> ，定义具体产品的公共接口；
+<strong>步骤3：</strong> 创建<strong>具体产品类</strong>（继承抽象产品类） &amp; 定义生产的具体产品；
+<strong>步骤4：创建具体工厂类</strong>（继承抽象工厂类），定义创建对应具体产品实例的方法；
+<strong>步骤5：外界通过调用具体工厂类的方法，从而创建不同具体产品类的实例</strong></p> <h3 id="例子"><a href="#例子" class="header-anchor">#</a> 例子</h3> <p>大众汽车公司，它旗下也有不少汽车品牌。大众汽车公司就好比一个汽车工厂，负责生产和销售汽车。它可以为客户提供一个客户需要的汽车。但是，大众汽车也会不定时推出新款汽车，在这种情况下，<strong>简单工厂模式</strong>需要，在添加一种汽车的情况下，同时要修改公司内部的生产环境（也就是工厂类的代码）。简单而言，就是工厂类（汽车公司）什么都要干，要修改必须大动干戈。因而一定程度上违背了开闭原则。而<strong>工厂方法模式</strong>则不一样，大众汽车公司不在总公司生产汽车，而是成立分公司，收购别的公司，成立具有针对性的汽车工厂专门生产对应的汽车。若客户的大量需求得不到满足，则总公司就另外成立新的二级公司(新品牌汽车的工厂)生产汽车，从而在不修改具体工厂的情况下引进新的产品。</p> <p><img src="/assets/img/fmCar.426de9a1.png" alt="image-20201130100239595"></p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token class-name">Factory</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FactoryMethod</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">FactoryVW</span> f1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FactoryVW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Car</span> car <span class="token operator">=</span> f1<span class="token punctuation">.</span><span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        car<span class="token punctuation">.</span><span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 步骤1： 创建抽象工厂类，定义具体工厂的公共接口</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">Factory</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token class-name">Car</span> <span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 步骤2： 创建抽象产品类 ，定义具体产品的公共接口</span>
+<span class="token keyword">interface</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 步骤3： 创建具体产品类（继承抽象产品类）， 定义生产的具体产品</span>
+    <span class="token comment">//具体产品大众汽车类</span>
+<span class="token keyword">class</span> VW <span class="token keyword">implements</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了大众汽车&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+    <span class="token comment">//具体产品奥迪类</span>
+<span class="token keyword">class</span> <span class="token class-name">Audi</span> <span class="token keyword">implements</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了奥迪汽车&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+    <span class="token comment">//具体产品保时捷</span>
+<span class="token keyword">class</span> <span class="token class-name">Porsche</span> <span class="token keyword">implements</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了保时捷汽车&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+    <span class="token comment">//具体产品兰博基尼</span>
+<span class="token keyword">class</span> <span class="token class-name">Lamborghini</span> <span class="token keyword">implements</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;生产出了兰博基尼汽车&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//步骤4：创建具体工厂类（继承抽象工厂类），定义创建对应具体产品实例的方法；</span>
+<span class="token keyword">class</span> <span class="token class-name">FactoryVW</span> <span class="token keyword">implements</span> <span class="token class-name">Factory</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Car</span> <span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token function">VW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FactoryAudi</span> <span class="token keyword">implements</span> <span class="token class-name">Factory</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Car</span> <span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Audi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FactoryPorsche</span> <span class="token keyword">implements</span> <span class="token class-name">Factory</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Car</span> <span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Porsche</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">FactoryLamborghini</span> <span class="token keyword">implements</span> <span class="token class-name">Factory</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Car</span> <span class="token class-name">Manufacture</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Lamborghini</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br></div></div><h3 id="相较于简单工厂的优点"><a href="#相较于简单工厂的优点" class="header-anchor">#</a> 相较于简单工厂的优点</h3> <ol><li><p>更符合开闭原则</p> <p>新增一种产品时只需要增加相应地具体产品类和相应的工厂子类即可</p></li> <li><p>符合单一职责原则</p> <p>每个具体的工厂类只负责创建对应的产品</p></li> <li><p>不使用静态工厂方法，可以形成基于继承实现的等级结构</p></li></ol> <h3 id="使用场景"><a href="#使用场景" class="header-anchor">#</a> 使用场景</h3> <ul><li>当一个类不知道它所需要的对象的类时
+在工厂方法模式中，客户端不需要知道具体产品类的类名，只需要知道所对应的工厂即可；</li> <li>当一个类希望通过其子类来指定创建对象时
+在工厂方法模式中，对于抽象工厂类只需要提供一个创建产品的接口，而由其子类来确定具体要创建的对象，利用面向对象的多态性和里氏代换原则，在程序运行时，子类对象将覆盖父类对象，从而使得系统更容易扩展。</li> <li>将创建对象的任务委托给多个工厂子类中的某一个，客户端在使用时可以无须关心是哪一个工厂子类创建产品子类，需要时再动态指定，可将具体工厂类的类名存储在配置文件或数据库中。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/design_pattern/simple.html" class="prev">
+        简单工厂模式
+      </a></span> <span class="next"><a href="/design_pattern/abstractFactory.html">
+        抽象工厂模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7966699e.js" defer></script><script src="/assets/js/2.a36266ce.js" defer></script><script src="/assets/js/10.d7744464.js" defer></script>
+  </body>
+</html>

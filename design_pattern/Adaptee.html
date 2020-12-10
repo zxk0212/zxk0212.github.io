@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>适配器模式 | ZCY&#39;s BLOG</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Just do it!">
+    
+    <link rel="preload" href="/assets/css/0.styles.1a4db85a.css" as="style"><link rel="preload" href="/assets/js/app.7966699e.js" as="script"><link rel="preload" href="/assets/js/2.a36266ce.js" as="script"><link rel="preload" href="/assets/js/6.7129a48f.js" as="script"><link rel="prefetch" href="/assets/js/10.d7744464.js"><link rel="prefetch" href="/assets/js/11.073d9fb2.js"><link rel="prefetch" href="/assets/js/12.fd3337a1.js"><link rel="prefetch" href="/assets/js/13.f250a71d.js"><link rel="prefetch" href="/assets/js/14.233c4df8.js"><link rel="prefetch" href="/assets/js/15.189ee2c5.js"><link rel="prefetch" href="/assets/js/16.f4b33bcf.js"><link rel="prefetch" href="/assets/js/17.98a5474b.js"><link rel="prefetch" href="/assets/js/18.88f98640.js"><link rel="prefetch" href="/assets/js/19.09bc7a58.js"><link rel="prefetch" href="/assets/js/20.5020bc01.js"><link rel="prefetch" href="/assets/js/21.3cf865db.js"><link rel="prefetch" href="/assets/js/22.10e298f8.js"><link rel="prefetch" href="/assets/js/23.4629b927.js"><link rel="prefetch" href="/assets/js/24.0e1d2962.js"><link rel="prefetch" href="/assets/js/25.3a7f5748.js"><link rel="prefetch" href="/assets/js/26.f0f3808f.js"><link rel="prefetch" href="/assets/js/27.efe9003b.js"><link rel="prefetch" href="/assets/js/28.1b54fe71.js"><link rel="prefetch" href="/assets/js/29.102b0e8c.js"><link rel="prefetch" href="/assets/js/3.0ca1a8e6.js"><link rel="prefetch" href="/assets/js/4.fd3ef56b.js"><link rel="prefetch" href="/assets/js/5.e326f80d.js"><link rel="prefetch" href="/assets/js/7.b03b58ac.js"><link rel="prefetch" href="/assets/js/8.cf5b412a.js"><link rel="prefetch" href="/assets/js/9.8677abc0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1a4db85a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ZCY's BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>认识设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式七大原则</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>设计模式概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>创建型设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>结构型设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/design_pattern/Structural_Pattern.html" class="sidebar-link">结构型模式简介</a></li><li><a href="/design_pattern/Composite.html" class="sidebar-link">组合模式（Composite Pattern）</a></li><li><a href="/design_pattern/Adaptee.html" aria-current="page" class="active sidebar-link">适配器模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_pattern/Adaptee.html#适配器模式" class="sidebar-link">适配器模式</a></li></ul></li><li><a href="/design_pattern/Facade.html" class="sidebar-link">外观模式</a></li><li><a href="/design_pattern/Bridge.html" class="sidebar-link">桥接模式</a></li><li><a href="/design_pattern/Proxy.html" class="sidebar-link">代理模式</a></li><li><a href="/design_pattern/Decorator.html" class="sidebar-link">装饰者模式</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>行为型设计模式</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="适配器模式"><a href="#适配器模式" class="header-anchor">#</a> 适配器模式</h2> <p>说到适配器，我们最熟悉的应该就是高中学的供电系统了，电厂提供的电传输时是高压电，到用户之前需要变压器进行转换变成电压为220v的电压。</p> <blockquote><p>​	适配器模式： 将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的哪些类能一起工作。</p></blockquote> <h3 id="类图"><a href="#类图" class="header-anchor">#</a> 类图</h3> <ol><li><p>类适配器</p> <p><img src="/assets/img/ClassAdapter.6fea7205.png" alt="ClassAdapter"></p></li> <li><p>对象适配器</p> <p><img src="/assets/img/ObjectAdapter.f43e963d.png" alt="ObjectAdapter"></p></li></ol> <h3 id="类适配器"><a href="#类适配器" class="header-anchor">#</a> 类适配器</h3> <ul><li>背景：小成买了一个进口的电视机</li> <li>冲突：进口电视机要求电压（110V）与国内插头标准输出电压（220V）不兼容</li> <li>解决方案：设置一个适配器将插头输出的220V转变成110V</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code> <span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Target</span> <span class="token punctuation">{</span>
+    <span class="token comment">//将220V转换输出110V（原有插头（Adaptee）没有的）</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Convert_110v</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">class</span> <span class="token class-name">PowerPort220V</span><span class="token punctuation">{</span>
+<span class="token comment">//原有插头只能输出220V</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Output_220v</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;220v&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">class</span> <span class="token class-name">Adapter220V</span> <span class="token keyword">extends</span> <span class="token class-name">PowerPort220V</span> <span class="token keyword">implements</span> <span class="token class-name">Target</span><span class="token punctuation">{</span>
+   <span class="token comment">/*期待的插头要求调用Convert_110v()，但原有插头没有
+     因此适配器补充上这个方法名
+     但实际上Convert_110v()只是调用原有插头的Output_220v()方法的内容
+     所以适配器只是将Output_220v()作了一层封装，封装成Target可以调用的Convert_110v()而已
+    */</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Convert_110v</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token class-name">Output_220v</span><span class="token punctuation">;</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;转化为110v&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">//进口机器类</span>
+<span class="token keyword">class</span> <span class="token class-name">ImportedMachine</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Work</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;进口机器正常运行&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">//通过Adapter类从而调用所需要的方法</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AdapterPattern</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">Target</span> mAdapter220V <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Adapter220V</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">ImportedMachine</span> mImportedMachine <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImportedMachine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        mAdapter220V<span class="token punctuation">.</span><span class="token class-name">Convert_110v</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        mImportedMachine<span class="token punctuation">.</span><span class="token class-name">Work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="对象适配器"><a href="#对象适配器" class="header-anchor">#</a> 对象适配器</h3> <p><img src="/assets/img/ObjectAdapter.f43e963d.png" alt="ObjectAdapter"></p> <p>与类的适配器模式不同的是，对象的适配器模式不是使用继承关系连接到Adaptee类，而是使用委派关系连接到Adaptee类。</p> <p>在Adaptor类中创建一个Adaptee对象。</p> <h3 id="优点"><a href="#优点" class="header-anchor">#</a> <strong>优点</strong></h3> <ul><li>更好的复用性
+系统需要使用现有的类，而此类的接口不符合系统的需要。那么通过适配器模式就可以让这些功能得到更好的复用。</li> <li>透明、简单
+客户端可以调用同一接口，因而对客户端来说是透明的。这样做更简单 &amp; 更直接</li> <li>更好的扩展性
+在实现适配器功能的时候，可以调用自己开发的功能，从而自然地扩展系统的功能。</li> <li>解耦性
+将目标类和适配者类解耦，通过引入一个适配器类重用现有的适配者类，而无需修改原有代码</li> <li>符合开放-关闭原则
+同一个适配器可以把适配者类和它的子类都适配到目标接口；可以为不同的目标接口实现不同的适配器，而不需要修改待适配类</li></ul> <h3 id="缺点"><a href="#缺点" class="header-anchor">#</a> <strong>缺点</strong></h3> <ul><li>过多的使用适配器，会让系统非常零乱，不易整体进行把握</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/design_pattern/Composite.html" class="prev">
+        组合模式（Composite Pattern）
+      </a></span> <span class="next"><a href="/design_pattern/Facade.html">
+        外观模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7966699e.js" defer></script><script src="/assets/js/2.a36266ce.js" defer></script><script src="/assets/js/6.7129a48f.js" defer></script>
+  </body>
+</html>
